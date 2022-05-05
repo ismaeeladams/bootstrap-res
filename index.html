@@ -14,6 +14,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+
     <title>Document</title>
   </head>
   <body>
@@ -39,7 +40,7 @@
         <div class="logo me-auto">
           <h1>Delicious</h1>
         </div>
-        <nav id="navbar" class="navbar order-last order-lg-0">
+        <nav id="navbar" class="navbar order-last order-lg-0 d-flex">
           <ul>
             <li>
               <a class="nav-link scrollto active" href="#landing">Home</a>
@@ -57,7 +58,95 @@
       </div>
     </section>
     <section id="landing" class="landing">
-      <div class="container"></div>
+      <div class="container">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://picsum.photos/200/300?random=1"
+                class="d-block w-100"
+                alt="pic"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>
+                  Some representative placeholder content for the first slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://picsum.photos/200/300?random=2"
+                class="d-block w-100"
+                alt="pic"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>
+                  Some representative placeholder content for the second slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://picsum.photos/200/300?random=3"
+                class="d-block w-100"
+                alt="pic"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>
+                  Some representative placeholder content for the third slide.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
     </section>
     <section id="about" class="about vh-100">
       <div class="container-fluid">
@@ -116,9 +205,9 @@
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="menu-filters">
               <li data-filter="*" class="filter-active">Show All</li>
-              <li data-filter=".filter-starters">Starters</li>
-              <li data-filter=".filter-salads">Salads</li>
-              <li data-filter=".filter-specialty">Specialty</li>
+              <li data-filter=".filter-starters" class>Starters</li>
+              <li data-filter=".filter-salads" class>Salads</li>
+              <li data-filter=".filter-specialty" class>Specialty</li>
             </ul>
           </div>
         </div>
@@ -135,14 +224,313 @@
             </div>
             <div class="menu-ingredients">Lorem, ipsum, dolor, sit, amet</div>
           </div>
+          <div
+            class="col-lg-6 menu-item filter-specialty"
+            style="position: absolute; left: 480px; top: 0px"
+          >
+            <div class="menu-content">
+              <a href="#">Lobster Bisque</a><span>R80</span>
+            </div>
+            <div class="menu-ingredients">Lorem, ipsum, dolor, sit, amet</div>
+          </div>
+          <div
+            class="col-lg-6 menu-item filter-starters"
+            style="position: absolute; left: 0px; top: 75px"
+          >
+            <div class="menu-content">
+              <a href="#">Lobster Bisque</a><span>R80</span>
+            </div>
+            <div class="menu-ingredients">Lorem, ipsum, dolor, sit, amet</div>
+          </div>
+          <div
+            class="col-lg-6 menu-item filter-salads"
+            style="position: absolute; left: 480px; top: 75px"
+          >
+            <div class="menu-content">
+              <a href="#">Lobster Bisque</a><span>R80</span>
+            </div>
+            <div class="menu-ingredients">Lorem, ipsum, dolor, sit, amet</div>
+          </div>
+          <div
+            class="col-lg-6 menu-item filter-specialty"
+            style="position: absolute; left: 0px; top: 150px"
+          >
+            <div class="menu-content">
+              <a href="#">Lobster Bisque</a><span>R80</span>
+            </div>
+            <div class="menu-ingredients">Lorem, ipsum, dolor, sit, amet</div>
+          </div>
+          <div
+            class="col-lg-6 menu-item filter-starters"
+            style="position: absolute; left: 480px; top: 150px"
+          >
+            <div class="menu-content">
+              <a href="#">Lobster Bisque</a><span>R80</span>
+            </div>
+            <div class="menu-ingredients">Lorem, ipsum, dolor, sit, amet</div>
+          </div>
+          <div
+            class="col-lg-6 menu-item filter-salads"
+            style="position: absolute; left: 0px; top: 225px"
+          >
+            <div class="menu-content">
+              <a href="#">Lobster Bisque</a><span>R80</span>
+            </div>
+            <div class="menu-ingredients">Lorem, ipsum, dolor, sit, amet</div>
+          </div>
+          <div
+            class="col-lg-6 menu-item filter-salads"
+            style="position: absolute; left: 480px; top: 225px"
+          >
+            <div class="menu-content">
+              <a href="#">Lobster Bisque</a><span>R80</span>
+            </div>
+            <div class="menu-ingredients">Lorem, ipsum, dolor, sit, amet</div>
+          </div>
+          <div
+            class="col-lg-6 menu-item filter-specialty"
+            style="position: absolute; left: 0px; top: 321px"
+          >
+            <div class="menu-content">
+              <a href="#">Lobster Bisque</a><span>R80</span>
+            </div>
+            <div class="menu-ingredients">Lorem, ipsum, dolor, sit, amet</div>
+          </div>
         </div>
       </div>
     </section>
     <section id="special" class="special">
-      <div class="container"></div>
+      <div class="container">
+        <div class="section-title">
+          <h2>Check <span>Specials</span></h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore.
+          </p>
+          <div class="row">
+            <div class="col-lg-3">
+              <ul class="nav nav-tabs flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-1"
+                    >Mondi sit est</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-2"
+                    >Mondi sit est</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-3"
+                    >Mondi sit est</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-4"
+                    >Mondi sit est</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-5"
+                    >Mondi sit est</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-9 mt-4 mt-lg-0">
+              <div class="tab-content">
+                <div class="tab-pane show active" id="tab-1">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-ld-1">
+                      <h3>Lorem ipsum dolor sit.</h3>
+                      <p class="fst-italic">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatem repellat nulla expedita optio perferendis
+                        veritatis.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Pariatur amet sequi neque rerum.
+                      </p>
+                    </div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img
+                        src="https://picsum.photos/200/300?random=6"
+                        alt
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-2">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-ld-1">
+                      <h3>Lorem ipsum dolor sit.</h3>
+                      <p class="fst-italic">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatem repellat nulla expedita optio perferendis
+                        veritatis.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Pariatur amet sequi neque rerum.
+                      </p>
+                    </div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img
+                        src="https://picsum.photos/200/300?random=7"
+                        alt
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-3">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-ld-1">
+                      <h3>Lorem ipsum dolor sit.</h3>
+                      <p class="fst-italic">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatem repellat nulla expedita optio perferendis
+                        veritatis.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Pariatur amet sequi neque rerum.
+                      </p>
+                    </div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img
+                        src="https://picsum.photos/200/300?random=8"
+                        alt
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-4">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-ld-1">
+                      <h3>Lorem ipsum dolor sit.</h3>
+                      <p class="fst-italic">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatem repellat nulla expedita optio perferendis
+                        veritatis.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Pariatur amet sequi neque rerum.
+                      </p>
+                    </div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img
+                        src="https://picsum.photos/200/300?random=9"
+                        alt
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-5">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-ld-1">
+                      <h3>Lorem ipsum dolor sit.</h3>
+                      <p class="fst-italic">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatem repellat nulla expedita optio perferendis
+                        veritatis.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Pariatur amet sequi neque rerum.
+                      </p>
+                    </div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img
+                        src="https://picsum.photos/200/300?random=10"
+                        alt
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="events" class="events">
-      <div class="container"></div>
+      <div class="container">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://picsum.photos/200/300?random=11"
+                class="d-block w-100"
+                alt="pic"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>
+                  Some representative placeholder content for the first slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://picsum.photos/200/300?random=12"
+                class="d-block w-100"
+                alt="pic"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>
+                  Some representative placeholder content for the second slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://picsum.photos/200/300?random=13"
+                class="d-block w-100"
+                alt="pic"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>
+                  Some representative placeholder content for the third slide.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="chefs" class="chefs">
       <div class="container"></div>
